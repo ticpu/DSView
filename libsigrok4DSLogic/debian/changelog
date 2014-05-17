@@ -1,0 +1,5 @@
+libsigrok4dslogic (1.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- Jerome <jeromepoulin@gmail.com>  Sat, 17 May 2014 15:16:53 -0400

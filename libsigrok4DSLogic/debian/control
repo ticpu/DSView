@@ -1,0 +1,43 @@
+Source: libsigrok4dslogic
+Priority: optional
+Maintainer: Jerome Poulin <jeromepoulin@gmail.com>
+Build-Depends: debhelper (>= 8.0.0), autotools-dev, git-core, gcc, make, autoconf, automake, libtool, pkg-config, libglib2.0-dev, libzip-dev, libudev-dev, libasound2-dev, check
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://www.dreamsourcelab.com/
+Vcs-Git: http://github.com/DreamSourceLab/DSLogic.git
+Vcs-Browser: http://github.com/DreamSourceLab/DSLogic
+
+Package: libsigrok4dslogic-dev
+Section: libdevel
+Architecture: any
+Depends: libsigrok4dslogic1 (= ${binary:Version})
+Description: Shared library which provides the basic API for DSLogic hardware
+ libsigrok4DSLogic is a shared library which provides the basic API
+ for DSLogic hardware.
+ libsigrok4DSLogic is based on libsigrok, a shared library from the sigrok project.
+ .
+ The sigrok project aims at creating a portable, cross-platform,
+ Free/Libre/Open-Source signal analysis software suite that supports various
+ device types (such as logic analyzers, oscilloscopes, multimeters, and more).
+ .
+ libsigrok is a shared library written in C which provides the basic API
+ for talking to hardware and reading/writing the acquired data into various
+ input/output file formats.
+
+Package: libsigrok4dslogic1
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Shared library which provides the basic API for DSLogic hardware
+ libsigrok4DSLogic is a shared library which provides the basic API
+ for DSLogic hardware.
+ libsigrok4DSLogic is based on libsigrok, a shared library from the sigrok project.
+ .
+ The sigrok project aims at creating a portable, cross-platform,
+ Free/Libre/Open-Source signal analysis software suite that supports various
+ device types (such as logic analyzers, oscilloscopes, multimeters, and more).
+ .
+ libsigrok is a shared library written in C which provides the basic API
+ for talking to hardware and reading/writing the acquired data into various
+ input/output file formats.
