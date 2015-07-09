@@ -739,8 +739,8 @@ bool MainWindow::store_session(QString name)
         s_obj["strigger"] = s->get_trig();
         boost::shared_ptr<view::DsoSignal> dsoSig;
         if (dsoSig = dynamic_pointer_cast<view::DsoSignal>(s)) {
-            s_obj["vdiv"] = QJsonValue::fromVariant(dsoSig->get_vDialValue());
-            s_obj["vfactor"] = QJsonValue::fromVariant(dsoSig->get_factor());
+            s_obj["vdiv"] = QJsonValue::fromVariant(QVariant((int)dsoSig->get_vDialValue()));
+            s_obj["vfactor"] = QJsonValue::fromVariant(QVariant((int)dsoSig->get_factor()));
             s_obj["coupling"] = dsoSig->get_acCoupling();
             s_obj["trigValue"] = dsoSig->get_trigRate();
             s_obj["zeroPos"] = dsoSig->get_zeroRate();
